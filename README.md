@@ -65,11 +65,14 @@ Fitting that model yields the following:
 Running the test dataset through this model yiedls the following results:
 <img width="999" alt="image" src="https://github.com/omarsultan/capstone/assets/6629296/28274ce0-8509-47db-8152-f1f03acf53a4">
 
+## Results
+For this test, I chose to go with MAPE as my metric for two reasons: 1) it is useful for time series forecasting, especially the speicifc network traffic I was looking at, and 2) I felt a % error was more useful than an aboslute number given the the large values of the underlyuing data we were dealing with and the dynamic eggs and flows of the traffic over time.  
+
+The MAPE score for ths model was 3.66%.
 
 ## Next steps
-1) Continue to refine and validate the model--the model seems to predict the proper shift to a postive trendline, but I wonder if it can predict the next reveral?
-2) Refine the concept--the serpentine nature of the dataset tends to support the notiion that simple lienar analysis is enought, but I am not sure if the model can be provide a more fine-grained prediction
-
+1) I am sure there is plenty of room for optimizations so I would continue to refine and validate the model and approach.
+2) I would explore this data using different, newer techniques such as using a reucrrent neural network like LSTM or perhaps one of the newer time series models like TimeGPT.
 
 
 
